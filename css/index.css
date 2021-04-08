@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  height: 70vh;
+  width: 25%;
+  position: relative;
+  margin: 2%;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-news-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.mb-4 {
+  margin-bottom: 20px;
+}
+
+.ml-4 {
+  margin-left: 20px;
+}
+
+.mr-4 {
+  margin-right: 20px;
+}
+
+.card-data {
+  position: absolute;
+  bottom: 0;
+  padding: 5%;
+  color: white;
+  backdrop-filter: blur(4px);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.news-provider-url {
+  text-decoration: none;
+  color: white;
+}
+
+.news-provider-url:hover {
+  text-decoration: underline;
+}
+
+.card-data-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-data-summary {
+  color: lightgray;
+}
+
+.news-provider-data {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.news-provider {
+  margin-right: auto;
+}
+
+.loading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.load-more-data {
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid #2c2c2c;
+  height: 50px;
+  background: transparent;
+  width: 10%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2c2c2c;
+  color: white;
+}
+
+/* adding media queries */
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+/* for height */
+@media only screen and (min-height: 770px) {
+  .card {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-height: 970px) {
+  .card {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-height: 800px) {
+  .card {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
